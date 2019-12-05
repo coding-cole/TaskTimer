@@ -160,13 +160,13 @@ public class AppProvider extends ContentProvider {
 				break;
 			case TIMINGS:
 				db = mOpenHelper.getWritableDatabase();
-				recordId = db.insert(TimingsContract.Timings.buildTimingUri(recordId));
-				if (recordId >= 0) {
-					returnUri = TimingsContract.Timings.buildTimingUri(recordId);
-				} else {
-					throw new android.database.SQLException("Failed to insert into " + uri.toString());
-				}
-				break;
+//				recordId = db.insert(TimingsContract.Timings.buildTimingUri(recordId)
+//				if (recordId >= 0) {
+//					returnUri = TimingsContract.Timings.buildTimingUri(recordId);
+//				} else {
+//					throw new android.database.SQLException("Failed to insert into " + uri.toString());
+//				}
+//				break;
 
 			default:
 				throw new IllegalArgumentException("Unknown uri: " + uri);
