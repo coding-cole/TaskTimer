@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/addedit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:maxLength="64"
+        android:hint="@string/task_name_required"
+        android:inputType="textPersonName"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/addedit_discription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:maxLength="256"
+        android:hint="@string/task_description_optional"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/addedit_sortorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:maxLength="9"
+        android:hint="@string/order_sort_low_to_high"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/addedit_save"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@android:drawable/ic_menu_save"
+        android:text="@string/save" />
+</LinearLayout>
